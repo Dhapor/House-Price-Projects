@@ -78,7 +78,7 @@ print(f'\nModel Is Saved\n')
 model = pickle.load(open('HousePriceModel.pkl', 'rb'))
 st.markdown("<h1 style = 'color: #618264; text-align: center; font-family:montserrat'>House Price Prediction System</h1>",unsafe_allow_html=True)
 st.markdown("<h3 style = 'margin: -15px; color: #618264; text-align: center; font-family:montserrat'>Start-up Project Built By Sammy</h3>",unsafe_allow_html=True)
-st.image('pngwing.com (2).png',  width = 700)
+st.image('house image.png',  width = 700)
 
 password = ['one', 'two', 'three', 'four']
 username = st.text_input('Enter your username')
@@ -90,7 +90,7 @@ if passes in password:
 else:
     st.error('You are not a registered user. But you have three trials')
 
-st.sidebar.image('pngwing.com (3).png',  caption = f'Welcome {username}')
+st.sidebar.image('user image.png',  caption = f'Welcome {username}')
 
 dx = data[['LotArea', 'LotFrontage', 'MSSubClass', 'BsmtUnfSF', 'GrLivArea', 'GarageArea', 'BsmtFinSF1']]
 st.write(dx.head())
