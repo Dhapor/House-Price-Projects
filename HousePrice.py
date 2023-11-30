@@ -126,8 +126,8 @@ input_variable = pd.DataFrame([{'LotArea':ltArea, 'LotFrontage': ltFront, 'MSSub
 st.write(input_variable)
 
 # Standard Scale the Input Variable.
-for i in input_variable.columns:
-    input_variable[i] = StandardScaler().fit_transform(input_variable[[i]])
+# for i in input_variable.columns:
+#     input_variable[i] = StandardScaler().fit_transform(input_variable[[i]])
 
 st.write(input_variable)
 
