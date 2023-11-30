@@ -132,7 +132,7 @@ st.write(input_variable)
 st.write(input_variable)
 
 st.markdown('<hr>', unsafe_allow_html=True)
-st.markdown("<h2 style = 'color: #0A2647; text-align: center; font-family: helvetica '>Model Report</h2>", unsafe_allow_html = True)
+st.markdown("<h2 style = 'color: #618264; text-align: center; font-family: helvetica '>Model Report</h2>", unsafe_allow_html = True)
 
 if st.button('Press To Predict'):
     predicted = model.predict(input_variable)
